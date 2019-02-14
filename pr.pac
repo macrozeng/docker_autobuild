@@ -12,6 +12,12 @@ function FindProxyForURL(url, host) {
        shExpMatch(host, "*.slack-redir.net")) {
        return PROXY;
     }
+
+   PROXY = "PROXY proxy.p1.event.ibm.com"
+
+   if (shExpMatch(host, "*.event.ibm.com")) {
+       return PROXY;
+    }
         // Everything else directly!
     return "DIRECT";
 }
