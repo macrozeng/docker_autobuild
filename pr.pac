@@ -13,7 +13,7 @@ function FindProxyForURL(url, host) {
        return PROXY;
     }
 
-   PROXY = "PROXY proxy.p1.event.ibm.com"
+   PROXY = "PROXY proxy.p1.event.ibm.com:8080"
 
    if (shExpMatch(host, "*.event.ibm.com")) {
        return PROXY;
